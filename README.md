@@ -4,13 +4,18 @@
 
 A Google Colab implementation for converting 2D human images into detailed 3D models using PIFuHD (Pixel-Aligned Implicit Function for High-Resolution Clothed Human Digitization).
 
+**Enhanced by**: [Garv Sharma](https://github.com/garvsharmxa/) with additional features for improved usability and accessibility.
+
 ## 🚀 Features
 
 - **2D to 3D Conversion**: Transform single human images into detailed 3D mesh models
 - **High-Resolution Output**: Generate 3D models with fine clothing and surface details
-- **Multiple Input Methods**: Support for both internet URLs and local file uploads
+- **Multiple Input Methods**: Support for both internet URLs and local file uploads *(Enhanced Feature)*
 - **Complete Pipeline**: Includes pose estimation, 3D reconstruction, and video rendering
 - **Ready-to-Use**: Pre-configured Google Colab environment with all dependencies
+- **URL Image Processing**: Direct image processing from web URLs *(New Addition)*
+- **Enhanced Error Handling**: Improved debugging and troubleshooting capabilities
+- **Automated Downloads**: Streamlined result downloading with file verification
 
 ## 📋 Requirements
 
@@ -54,12 +59,15 @@ sh ./scripts/download_trained_model.sh
 
 ## 🚀 Quick Start
 
-### Method 1: Using Internet Images
+### Method 1: Using Internet Images *(Enhanced Feature)*
 1. Run the setup cell (STEP 1)
-2. Use the "Upload Image From Internet" section
+2. Use the "Uploading Image From Internet" section
 3. Paste an image URL in the `image_url` field
-4. Execute the cell to process the image
-5. Download results using the download cell
+4. The system will automatically download and process the image from the URL
+5. Execute the cell to process the image
+6. Download results using the download cell
+
+**Note**: This feature allows you to process images directly from the web without manual downloading. Simply copy any image URL and paste it in the designated field.
 
 ### Method 2: Using Local Images
 1. Run the setup cell (STEP 1)
@@ -177,6 +185,21 @@ Please refer to individual component licenses for detailed terms.
 - **Intel** for Lightweight Human Pose Estimation
 - **PyTorch3D** team for 3D processing utilities
 - **Google Colab** for providing accessible GPU computing
+
+## 👨‍💻 Enhanced Implementation
+
+**Developed and Enhanced by**: [Garv Sharma](https://github.com/garvsharmxa/)
+
+### Key Enhancements Added:
+- **Internet URL Image Processing**: Added capability to process images directly from web URLs without manual downloading
+- **Improved Error Handling**: Enhanced debugging and error reporting for better user experience
+- **Streamlined Workflow**: Simplified the process with automated file management and processing
+- **Enhanced Download System**: Improved result downloading with comprehensive file verification
+- **Better Documentation**: Added detailed troubleshooting and user guidance
+
+### Original Research References:
+- **PIFuHD Method**: [Multi-Level Pixel-Aligned Implicit Function for High-Resolution 3D Human Digitization](https://shunsukesaito.github.io/PIFuHD/)
+- **Background Removal Tool**: [Remove.bg](https://www.remove.bg/) for preprocessing images
 
 ## 📞 Support
 
